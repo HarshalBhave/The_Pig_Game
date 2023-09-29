@@ -193,7 +193,7 @@ btnHold.addEventListener("click" , function() {
     if(player) {
         score[activePlayer] += currentScore
         document.getElementById(`score--${activePlayer}`).textContent = score[activePlayer]
-        if (score[activePlayer] >= 100) {
+        if (score[activePlayer] >= 50) {
             player = false
             imageSrc.classList.add("hidden")
             document.querySelector(`.player--${activePlayer}`).classList.add("player--winner")
